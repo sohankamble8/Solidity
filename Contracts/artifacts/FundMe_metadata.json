@@ -13,51 +13,6 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "ethAmount",
-						"type": "uint256"
-					}
-				],
-				"name": "getConversionRate",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getPrice",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getVersion",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
 				"inputs": [],
 				"name": "limitAmount",
 				"outputs": [
@@ -65,6 +20,44 @@
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "senderAndAmountSent",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "senders",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
 					}
 				],
 				"stateMutability": "view",
@@ -107,11 +100,19 @@
 			]
 		},
 		"Contracts/FundMe.sol": {
-			"keccak256": "0x6639d343c83a37784ccb1e4c5ff10053948a98eb86168cab4e8f1637100f97d9",
+			"keccak256": "0x2523d09591e7cb8f49c60658a2e667abf44c525a4f871b4a89d5e25ba808e856",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://02ccbfe72e5e6c4b1ce4aef5c1a3c2306eb837a190ac7b0bcc30ceb438cfeb94",
-				"dweb:/ipfs/QmfDWftLnjRkp7XipsNSddfCPAVygU3AoxAH9S521aLZgQ"
+				"bzz-raw://8fc3e350329a07390cdd7dcdff7442842538952abd63f5f34b4c1bc63cc2e4fb",
+				"dweb:/ipfs/QmSUakQ474EmkdvQY7nvE7NfLBxsCW7hkjHDwgeiECSTgj"
+			]
+		},
+		"Contracts/PriceConverter.sol": {
+			"keccak256": "0x9657875721a8ace83d13b9e5bf13252274a4a84f2a30a3288c76f46d1139d0d5",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ac333c52ac8a3e0d6b622a16a849b4f2884241d2f2a13aa761da459d13fc5431",
+				"dweb:/ipfs/QmXwpEU3WMtmpmucWHeN7gWw6Ltzc4LjM9VNXtYoHeE9d1"
 			]
 		}
 	},
