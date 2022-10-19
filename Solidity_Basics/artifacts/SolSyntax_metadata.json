@@ -1,0 +1,73 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "isTime",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "makeTrue",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "makefalse",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Solidity_Basics/SolSyntax.sol": "SolSyntax"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Solidity_Basics/SolSyntax.sol": {
+			"keccak256": "0x1dc468603d8c6de734193d02210ef1a17b080dadd47addf5b61510cb652c5906",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://9e8b901379c282e352a07bf646fe722eefc742ac8e1eb9d88895643875f799c0",
+				"dweb:/ipfs/QmZQSHYSMK8SDw1dzYiG7Cpo3em1434FeLXngeL6HH4Mkg"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,431 @@
+{
+	"id": "397406b63c3e7f117d04f02e58cc7363",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.17",
+	"solcLongVersion": "0.8.17+commit.8df45f5f",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"Solidity_Basics/Inheritance.sol": {
+				"content": "// SPDX-License-Identifier: MIT\r\n\r\npragma solidity ^0.8.0;\r\n\r\ncontract Inheritance{\r\n    address[] private wallets;\r\n    mapping(address => uint) private inheritance;\r\n\r\n    constructor() payable{\r\n\r\n    }\r\n}"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"contracts": {
+			"Solidity_Basics/Inheritance.sol": {
+				"Inheritance": {
+					"abi": [
+						{
+							"inputs": [],
+							"stateMutability": "payable",
+							"type": "constructor"
+						}
+					],
+					"devdoc": {
+						"kind": "dev",
+						"methods": {},
+						"version": 1
+					},
+					"evm": {
+						"assembly": "    /* \"Solidity_Basics/Inheritance.sol\":62:208  contract Inheritance{... */\n  mstore(0x40, 0x80)\n  dataSize(sub_0)\n  dup1\n  dataOffset(sub_0)\n  0x00\n  codecopy\n  0x00\n  return\nstop\n\nsub_0: assembly {\n        /* \"Solidity_Basics/Inheritance.sol\":62:208  contract Inheritance{... */\n      mstore(0x40, 0x80)\n      0x00\n      dup1\n      revert\n\n    auxdata: 0xa2646970667358221220bfaf6b344ce7dd0a2cc93ef0a4840e86f10900200722e03a85ac95864a91a60b64736f6c63430008110033\n}\n",
+						"bytecode": {
+							"functionDebugData": {
+								"@_12": {
+									"entryPoint": null,
+									"id": 12,
+									"parameterSlots": 0,
+									"returnSlots": 0
+								}
+							},
+							"generatedSources": [],
+							"linkReferences": {},
+							"object": "6080604052603f8060116000396000f3fe6080604052600080fdfea2646970667358221220bfaf6b344ce7dd0a2cc93ef0a4840e86f10900200722e03a85ac95864a91a60b64736f6c63430008110033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x3F DUP1 PUSH1 0x11 PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0xBF 0xAF PUSH12 0x344CE7DD0A2CC93EF0A4840E DUP7 CALL MULMOD STOP KECCAK256 SMOD 0x22 0xE0 GASPRICE DUP6 0xAC SWAP6 DUP7 0x4A SWAP2 0xA6 SIGNEXTEND PUSH5 0x736F6C6343 STOP ADDMOD GT STOP CALLER ",
+							"sourceMap": "62:146:0:-:0;;;;;;;;;"
+						},
+						"deployedBytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"immutableReferences": {},
+							"linkReferences": {},
+							"object": "6080604052600080fdfea2646970667358221220bfaf6b344ce7dd0a2cc93ef0a4840e86f10900200722e03a85ac95864a91a60b64736f6c63430008110033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0xBF 0xAF PUSH12 0x344CE7DD0A2CC93EF0A4840E DUP7 CALL MULMOD STOP KECCAK256 SMOD 0x22 0xE0 GASPRICE DUP6 0xAC SWAP6 DUP7 0x4A SWAP2 0xA6 SIGNEXTEND PUSH5 0x736F6C6343 STOP ADDMOD GT STOP CALLER ",
+							"sourceMap": "62:146:0:-:0;;;;;"
+						},
+						"gasEstimates": {
+							"creation": {
+								"codeDepositCost": "12600",
+								"executionCost": "42",
+								"totalCost": "12642"
+							}
+						},
+						"legacyAssembly": {
+							".code": [
+								{
+									"begin": 62,
+									"end": 208,
+									"name": "PUSH",
+									"source": 0,
+									"value": "80"
+								},
+								{
+									"begin": 62,
+									"end": 208,
+									"name": "PUSH",
+									"source": 0,
+									"value": "40"
+								},
+								{
+									"begin": 62,
+									"end": 208,
+									"name": "MSTORE",
+									"source": 0
+								},
+								{
+									"begin": 62,
+									"end": 208,
+									"name": "PUSH #[$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 62,
+									"end": 208,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 62,
+									"end": 208,
+									"name": "PUSH [$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 62,
+									"end": 208,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 62,
+									"end": 208,
+									"name": "CODECOPY",
+									"source": 0
+								},
+								{
+									"begin": 62,
+									"end": 208,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 62,
+									"end": 208,
+									"name": "RETURN",
+									"source": 0
+								}
+							],
+							".data": {
+								"0": {
+									".auxdata": "a2646970667358221220bfaf6b344ce7dd0a2cc93ef0a4840e86f10900200722e03a85ac95864a91a60b64736f6c63430008110033",
+									".code": [
+										{
+											"begin": 62,
+											"end": 208,
+											"name": "PUSH",
+											"source": 0,
+											"value": "80"
+										},
+										{
+											"begin": 62,
+											"end": 208,
+											"name": "PUSH",
+											"source": 0,
+											"value": "40"
+										},
+										{
+											"begin": 62,
+											"end": 208,
+											"name": "MSTORE",
+											"source": 0
+										},
+										{
+											"begin": 62,
+											"end": 208,
+											"name": "PUSH",
+											"source": 0,
+											"value": "0"
+										},
+										{
+											"begin": 62,
+											"end": 208,
+											"name": "DUP1",
+											"source": 0
+										},
+										{
+											"begin": 62,
+											"end": 208,
+											"name": "REVERT",
+											"source": 0
+										}
+									]
+								}
+							},
+							"sourceList": [
+								"Solidity_Basics/Inheritance.sol",
+								"#utility.yul"
+							]
+						},
+						"methodIdentifiers": {}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"payable\",\"type\":\"constructor\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"Solidity_Basics/Inheritance.sol\":\"Inheritance\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"Solidity_Basics/Inheritance.sol\":{\"keccak256\":\"0xee1b86e696ad6acf747c37cd56dd113d6c582e792975e050f09c4b06d3b5f9ff\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://4dcdfcac1b575f5053c7cc2d507fc6297e857566b284d877a0722295547e9832\",\"dweb:/ipfs/QmPb8cxj5LrecryjsENHefCrtPwXjgCPXgTvRwo9BxazhH\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [
+							{
+								"astId": 4,
+								"contract": "Solidity_Basics/Inheritance.sol:Inheritance",
+								"label": "wallets",
+								"offset": 0,
+								"slot": "0",
+								"type": "t_array(t_address)dyn_storage"
+							},
+							{
+								"astId": 8,
+								"contract": "Solidity_Basics/Inheritance.sol:Inheritance",
+								"label": "inheritance",
+								"offset": 0,
+								"slot": "1",
+								"type": "t_mapping(t_address,t_uint256)"
+							}
+						],
+						"types": {
+							"t_address": {
+								"encoding": "inplace",
+								"label": "address",
+								"numberOfBytes": "20"
+							},
+							"t_array(t_address)dyn_storage": {
+								"base": "t_address",
+								"encoding": "dynamic_array",
+								"label": "address[]",
+								"numberOfBytes": "32"
+							},
+							"t_mapping(t_address,t_uint256)": {
+								"encoding": "mapping",
+								"key": "t_address",
+								"label": "mapping(address => uint256)",
+								"numberOfBytes": "32",
+								"value": "t_uint256"
+							},
+							"t_uint256": {
+								"encoding": "inplace",
+								"label": "uint256",
+								"numberOfBytes": "32"
+							}
+						}
+					},
+					"userdoc": {
+						"kind": "user",
+						"methods": {},
+						"version": 1
+					}
+				}
+			}
+		},
+		"sources": {
+			"Solidity_Basics/Inheritance.sol": {
+				"ast": {
+					"absolutePath": "Solidity_Basics/Inheritance.sol",
+					"exportedSymbols": {
+						"Inheritance": [
+							13
+						]
+					},
+					"id": 14,
+					"license": "MIT",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"^",
+								"0.8",
+								".0"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "35:23:0"
+						},
+						{
+							"abstract": false,
+							"baseContracts": [],
+							"canonicalName": "Inheritance",
+							"contractDependencies": [],
+							"contractKind": "contract",
+							"fullyImplemented": true,
+							"id": 13,
+							"linearizedBaseContracts": [
+								13
+							],
+							"name": "Inheritance",
+							"nameLocation": "71:11:0",
+							"nodeType": "ContractDefinition",
+							"nodes": [
+								{
+									"constant": false,
+									"id": 4,
+									"mutability": "mutable",
+									"name": "wallets",
+									"nameLocation": "107:7:0",
+									"nodeType": "VariableDeclaration",
+									"scope": 13,
+									"src": "89:25:0",
+									"stateVariable": true,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_array$_t_address_$dyn_storage",
+										"typeString": "address[]"
+									},
+									"typeName": {
+										"baseType": {
+											"id": 2,
+											"name": "address",
+											"nodeType": "ElementaryTypeName",
+											"src": "89:7:0",
+											"stateMutability": "nonpayable",
+											"typeDescriptions": {
+												"typeIdentifier": "t_address",
+												"typeString": "address"
+											}
+										},
+										"id": 3,
+										"nodeType": "ArrayTypeName",
+										"src": "89:9:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+											"typeString": "address[]"
+										}
+									},
+									"visibility": "private"
+								},
+								{
+									"constant": false,
+									"id": 8,
+									"mutability": "mutable",
+									"name": "inheritance",
+									"nameLocation": "154:11:0",
+									"nodeType": "VariableDeclaration",
+									"scope": 13,
+									"src": "121:44:0",
+									"stateVariable": true,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+										"typeString": "mapping(address => uint256)"
+									},
+									"typeName": {
+										"id": 7,
+										"keyType": {
+											"id": 5,
+											"name": "address",
+											"nodeType": "ElementaryTypeName",
+											"src": "129:7:0",
+											"typeDescriptions": {
+												"typeIdentifier": "t_address",
+												"typeString": "address"
+											}
+										},
+										"nodeType": "Mapping",
+										"src": "121:24:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+											"typeString": "mapping(address => uint256)"
+										},
+										"valueType": {
+											"id": 6,
+											"name": "uint",
+											"nodeType": "ElementaryTypeName",
+											"src": "140:4:0",
+											"typeDescriptions": {
+												"typeIdentifier": "t_uint256",
+												"typeString": "uint256"
+											}
+										}
+									},
+									"visibility": "private"
+								},
+								{
+									"body": {
+										"id": 11,
+										"nodeType": "Block",
+										"src": "195:10:0",
+										"statements": []
+									},
+									"id": 12,
+									"implemented": true,
+									"kind": "constructor",
+									"modifiers": [],
+									"name": "",
+									"nameLocation": "-1:-1:-1",
+									"nodeType": "FunctionDefinition",
+									"parameters": {
+										"id": 9,
+										"nodeType": "ParameterList",
+										"parameters": [],
+										"src": "185:2:0"
+									},
+									"returnParameters": {
+										"id": 10,
+										"nodeType": "ParameterList",
+										"parameters": [],
+										"src": "195:0:0"
+									},
+									"scope": 13,
+									"src": "174:31:0",
+									"stateMutability": "payable",
+									"virtual": false,
+									"visibility": "public"
+								}
+							],
+							"scope": 14,
+							"src": "62:146:0",
+							"usedErrors": []
+						}
+					],
+					"src": "35:173:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

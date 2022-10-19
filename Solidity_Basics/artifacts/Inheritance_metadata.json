@@ -1,0 +1,76 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "payable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "died",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_wallet",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "setup",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Solidity_Basics/Inheritance.sol": "Inheritance"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Solidity_Basics/Inheritance.sol": {
+			"keccak256": "0xb16af4f42556f5fde08a80a67738396d44bed15e545f7e6a00021e08ee5e0303",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://edd6441a0bf5e746cb064152cc253bd24f3e61334e4fff356889fc58d3d49a8b",
+				"dweb:/ipfs/QmVQfgD43pGxc5q3U2LvEQwJHc1b4KYvG2Qg5mcsVfaUv2"
+			]
+		}
+	},
+	"version": 1
+}

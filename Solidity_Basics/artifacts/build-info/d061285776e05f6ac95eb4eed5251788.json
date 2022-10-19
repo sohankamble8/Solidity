@@ -1,0 +1,657 @@
+{
+	"id": "d061285776e05f6ac95eb4eed5251788",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.17",
+	"solcLongVersion": "0.8.17+commit.8df45f5f",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"Solidity_Basics/Inheritance.sol": {
+				"content": "// SPDX-License-Identifier: MIT\r\n\r\npragma solidity ^0.8.0;\r\n\r\ncontract Inheritance{\r\n    address[] private wallets;\r\n    mapping(address => uint) private inheritance;\r\n    address private owner;\r\n    \r\n    constructor() payable{\r\n        owner = msg.sender;\r\n\r\n    }\r\n}"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"contracts": {
+			"Solidity_Basics/Inheritance.sol": {
+				"Inheritance": {
+					"abi": [
+						{
+							"inputs": [],
+							"stateMutability": "payable",
+							"type": "constructor"
+						}
+					],
+					"devdoc": {
+						"kind": "dev",
+						"methods": {},
+						"version": 1
+					},
+					"evm": {
+						"assembly": "    /* \"Solidity_Basics/Inheritance.sol\":62:269  contract Inheritance{... */\n  mstore(0x40, 0x80)\n    /* \"Solidity_Basics/Inheritance.sol\":246:256  msg.sender */\n  caller\n    /* \"Solidity_Basics/Inheritance.sol\":238:243  owner */\n  0x02\n  0x00\n    /* \"Solidity_Basics/Inheritance.sol\":238:256  owner = msg.sender */\n  0x0100\n  exp\n  dup2\n  sload\n  dup2\n  0xffffffffffffffffffffffffffffffffffffffff\n  mul\n  not\n  and\n  swap1\n  dup4\n  0xffffffffffffffffffffffffffffffffffffffff\n  and\n  mul\n  or\n  swap1\n  sstore\n  pop\n    /* \"Solidity_Basics/Inheritance.sol\":62:269  contract Inheritance{... */\n  dataSize(sub_0)\n  dup1\n  dataOffset(sub_0)\n  0x00\n  codecopy\n  0x00\n  return\nstop\n\nsub_0: assembly {\n        /* \"Solidity_Basics/Inheritance.sol\":62:269  contract Inheritance{... */\n      mstore(0x40, 0x80)\n      0x00\n      dup1\n      revert\n\n    auxdata: 0xa264697066735822122080ec94aea46dc40b9b547ae8ff429e269a4d6272201a13e8825afc927b15902f64736f6c63430008110033\n}\n",
+						"bytecode": {
+							"functionDebugData": {
+								"@_19": {
+									"entryPoint": null,
+									"id": 19,
+									"parameterSlots": 0,
+									"returnSlots": 0
+								}
+							},
+							"generatedSources": [],
+							"linkReferences": {},
+							"object": "608060405233600260006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550603f8060526000396000f3fe6080604052600080fdfea264697066735822122080ec94aea46dc40b9b547ae8ff429e269a4d6272201a13e8825afc927b15902f64736f6c63430008110033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLER PUSH1 0x2 PUSH1 0x0 PUSH2 0x100 EXP DUP2 SLOAD DUP2 PUSH20 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF MUL NOT AND SWAP1 DUP4 PUSH20 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF AND MUL OR SWAP1 SSTORE POP PUSH1 0x3F DUP1 PUSH1 0x52 PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 DUP1 0xEC SWAP5 0xAE LOG4 PUSH14 0xC40B9B547AE8FF429E269A4D6272 KECCAK256 BYTE SGT 0xE8 DUP3 GAS 0xFC SWAP3 PUSH28 0x15902F64736F6C634300081100330000000000000000000000000000 ",
+							"sourceMap": "62:207:0:-:0;;;246:10;238:5;;:18;;;;;;;;;;;;;;;;;;62:207;;;;;;"
+						},
+						"deployedBytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"immutableReferences": {},
+							"linkReferences": {},
+							"object": "6080604052600080fdfea264697066735822122080ec94aea46dc40b9b547ae8ff429e269a4d6272201a13e8825afc927b15902f64736f6c63430008110033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 DUP1 0xEC SWAP5 0xAE LOG4 PUSH14 0xC40B9B547AE8FF429E269A4D6272 KECCAK256 BYTE SGT 0xE8 DUP3 GAS 0xFC SWAP3 PUSH28 0x15902F64736F6C634300081100330000000000000000000000000000 ",
+							"sourceMap": "62:207:0:-:0;;;;;"
+						},
+						"gasEstimates": {
+							"creation": {
+								"codeDepositCost": "12600",
+								"executionCost": "24308",
+								"totalCost": "36908"
+							}
+						},
+						"legacyAssembly": {
+							".code": [
+								{
+									"begin": 62,
+									"end": 269,
+									"name": "PUSH",
+									"source": 0,
+									"value": "80"
+								},
+								{
+									"begin": 62,
+									"end": 269,
+									"name": "PUSH",
+									"source": 0,
+									"value": "40"
+								},
+								{
+									"begin": 62,
+									"end": 269,
+									"name": "MSTORE",
+									"source": 0
+								},
+								{
+									"begin": 246,
+									"end": 256,
+									"name": "CALLER",
+									"source": 0
+								},
+								{
+									"begin": 238,
+									"end": 243,
+									"name": "PUSH",
+									"source": 0,
+									"value": "2"
+								},
+								{
+									"begin": 238,
+									"end": 243,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 238,
+									"end": 256,
+									"name": "PUSH",
+									"source": 0,
+									"value": "100"
+								},
+								{
+									"begin": 238,
+									"end": 256,
+									"name": "EXP",
+									"source": 0
+								},
+								{
+									"begin": 238,
+									"end": 256,
+									"name": "DUP2",
+									"source": 0
+								},
+								{
+									"begin": 238,
+									"end": 256,
+									"name": "SLOAD",
+									"source": 0
+								},
+								{
+									"begin": 238,
+									"end": 256,
+									"name": "DUP2",
+									"source": 0
+								},
+								{
+									"begin": 238,
+									"end": 256,
+									"name": "PUSH",
+									"source": 0,
+									"value": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+								},
+								{
+									"begin": 238,
+									"end": 256,
+									"name": "MUL",
+									"source": 0
+								},
+								{
+									"begin": 238,
+									"end": 256,
+									"name": "NOT",
+									"source": 0
+								},
+								{
+									"begin": 238,
+									"end": 256,
+									"name": "AND",
+									"source": 0
+								},
+								{
+									"begin": 238,
+									"end": 256,
+									"name": "SWAP1",
+									"source": 0
+								},
+								{
+									"begin": 238,
+									"end": 256,
+									"name": "DUP4",
+									"source": 0
+								},
+								{
+									"begin": 238,
+									"end": 256,
+									"name": "PUSH",
+									"source": 0,
+									"value": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+								},
+								{
+									"begin": 238,
+									"end": 256,
+									"name": "AND",
+									"source": 0
+								},
+								{
+									"begin": 238,
+									"end": 256,
+									"name": "MUL",
+									"source": 0
+								},
+								{
+									"begin": 238,
+									"end": 256,
+									"name": "OR",
+									"source": 0
+								},
+								{
+									"begin": 238,
+									"end": 256,
+									"name": "SWAP1",
+									"source": 0
+								},
+								{
+									"begin": 238,
+									"end": 256,
+									"name": "SSTORE",
+									"source": 0
+								},
+								{
+									"begin": 238,
+									"end": 256,
+									"name": "POP",
+									"source": 0
+								},
+								{
+									"begin": 62,
+									"end": 269,
+									"name": "PUSH #[$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 62,
+									"end": 269,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 62,
+									"end": 269,
+									"name": "PUSH [$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 62,
+									"end": 269,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 62,
+									"end": 269,
+									"name": "CODECOPY",
+									"source": 0
+								},
+								{
+									"begin": 62,
+									"end": 269,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 62,
+									"end": 269,
+									"name": "RETURN",
+									"source": 0
+								}
+							],
+							".data": {
+								"0": {
+									".auxdata": "a264697066735822122080ec94aea46dc40b9b547ae8ff429e269a4d6272201a13e8825afc927b15902f64736f6c63430008110033",
+									".code": [
+										{
+											"begin": 62,
+											"end": 269,
+											"name": "PUSH",
+											"source": 0,
+											"value": "80"
+										},
+										{
+											"begin": 62,
+											"end": 269,
+											"name": "PUSH",
+											"source": 0,
+											"value": "40"
+										},
+										{
+											"begin": 62,
+											"end": 269,
+											"name": "MSTORE",
+											"source": 0
+										},
+										{
+											"begin": 62,
+											"end": 269,
+											"name": "PUSH",
+											"source": 0,
+											"value": "0"
+										},
+										{
+											"begin": 62,
+											"end": 269,
+											"name": "DUP1",
+											"source": 0
+										},
+										{
+											"begin": 62,
+											"end": 269,
+											"name": "REVERT",
+											"source": 0
+										}
+									]
+								}
+							},
+							"sourceList": [
+								"Solidity_Basics/Inheritance.sol",
+								"#utility.yul"
+							]
+						},
+						"methodIdentifiers": {}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"payable\",\"type\":\"constructor\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"Solidity_Basics/Inheritance.sol\":\"Inheritance\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"Solidity_Basics/Inheritance.sol\":{\"keccak256\":\"0x8dd202ff163cc02a2f61300d47df5e76b68a5a4433304594f3cfdfe801171d01\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://67cedb1a9995bafe7ea8853244328ddd7d4f3a320703256289992e441fa43edb\",\"dweb:/ipfs/QmNZB8yxGoWPxWnPsD8nPbqo32N3fWWuFCv9qhY89AJAjU\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [
+							{
+								"astId": 4,
+								"contract": "Solidity_Basics/Inheritance.sol:Inheritance",
+								"label": "wallets",
+								"offset": 0,
+								"slot": "0",
+								"type": "t_array(t_address)dyn_storage"
+							},
+							{
+								"astId": 8,
+								"contract": "Solidity_Basics/Inheritance.sol:Inheritance",
+								"label": "inheritance",
+								"offset": 0,
+								"slot": "1",
+								"type": "t_mapping(t_address,t_uint256)"
+							},
+							{
+								"astId": 10,
+								"contract": "Solidity_Basics/Inheritance.sol:Inheritance",
+								"label": "owner",
+								"offset": 0,
+								"slot": "2",
+								"type": "t_address"
+							}
+						],
+						"types": {
+							"t_address": {
+								"encoding": "inplace",
+								"label": "address",
+								"numberOfBytes": "20"
+							},
+							"t_array(t_address)dyn_storage": {
+								"base": "t_address",
+								"encoding": "dynamic_array",
+								"label": "address[]",
+								"numberOfBytes": "32"
+							},
+							"t_mapping(t_address,t_uint256)": {
+								"encoding": "mapping",
+								"key": "t_address",
+								"label": "mapping(address => uint256)",
+								"numberOfBytes": "32",
+								"value": "t_uint256"
+							},
+							"t_uint256": {
+								"encoding": "inplace",
+								"label": "uint256",
+								"numberOfBytes": "32"
+							}
+						}
+					},
+					"userdoc": {
+						"kind": "user",
+						"methods": {},
+						"version": 1
+					}
+				}
+			}
+		},
+		"sources": {
+			"Solidity_Basics/Inheritance.sol": {
+				"ast": {
+					"absolutePath": "Solidity_Basics/Inheritance.sol",
+					"exportedSymbols": {
+						"Inheritance": [
+							20
+						]
+					},
+					"id": 21,
+					"license": "MIT",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"^",
+								"0.8",
+								".0"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "35:23:0"
+						},
+						{
+							"abstract": false,
+							"baseContracts": [],
+							"canonicalName": "Inheritance",
+							"contractDependencies": [],
+							"contractKind": "contract",
+							"fullyImplemented": true,
+							"id": 20,
+							"linearizedBaseContracts": [
+								20
+							],
+							"name": "Inheritance",
+							"nameLocation": "71:11:0",
+							"nodeType": "ContractDefinition",
+							"nodes": [
+								{
+									"constant": false,
+									"id": 4,
+									"mutability": "mutable",
+									"name": "wallets",
+									"nameLocation": "107:7:0",
+									"nodeType": "VariableDeclaration",
+									"scope": 20,
+									"src": "89:25:0",
+									"stateVariable": true,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_array$_t_address_$dyn_storage",
+										"typeString": "address[]"
+									},
+									"typeName": {
+										"baseType": {
+											"id": 2,
+											"name": "address",
+											"nodeType": "ElementaryTypeName",
+											"src": "89:7:0",
+											"stateMutability": "nonpayable",
+											"typeDescriptions": {
+												"typeIdentifier": "t_address",
+												"typeString": "address"
+											}
+										},
+										"id": 3,
+										"nodeType": "ArrayTypeName",
+										"src": "89:9:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+											"typeString": "address[]"
+										}
+									},
+									"visibility": "private"
+								},
+								{
+									"constant": false,
+									"id": 8,
+									"mutability": "mutable",
+									"name": "inheritance",
+									"nameLocation": "154:11:0",
+									"nodeType": "VariableDeclaration",
+									"scope": 20,
+									"src": "121:44:0",
+									"stateVariable": true,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+										"typeString": "mapping(address => uint256)"
+									},
+									"typeName": {
+										"id": 7,
+										"keyType": {
+											"id": 5,
+											"name": "address",
+											"nodeType": "ElementaryTypeName",
+											"src": "129:7:0",
+											"typeDescriptions": {
+												"typeIdentifier": "t_address",
+												"typeString": "address"
+											}
+										},
+										"nodeType": "Mapping",
+										"src": "121:24:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+											"typeString": "mapping(address => uint256)"
+										},
+										"valueType": {
+											"id": 6,
+											"name": "uint",
+											"nodeType": "ElementaryTypeName",
+											"src": "140:4:0",
+											"typeDescriptions": {
+												"typeIdentifier": "t_uint256",
+												"typeString": "uint256"
+											}
+										}
+									},
+									"visibility": "private"
+								},
+								{
+									"constant": false,
+									"id": 10,
+									"mutability": "mutable",
+									"name": "owner",
+									"nameLocation": "188:5:0",
+									"nodeType": "VariableDeclaration",
+									"scope": 20,
+									"src": "172:21:0",
+									"stateVariable": true,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_address",
+										"typeString": "address"
+									},
+									"typeName": {
+										"id": 9,
+										"name": "address",
+										"nodeType": "ElementaryTypeName",
+										"src": "172:7:0",
+										"stateMutability": "nonpayable",
+										"typeDescriptions": {
+											"typeIdentifier": "t_address",
+											"typeString": "address"
+										}
+									},
+									"visibility": "private"
+								},
+								{
+									"body": {
+										"id": 18,
+										"nodeType": "Block",
+										"src": "227:39:0",
+										"statements": [
+											{
+												"expression": {
+													"id": 16,
+													"isConstant": false,
+													"isLValue": false,
+													"isPure": false,
+													"lValueRequested": false,
+													"leftHandSide": {
+														"id": 13,
+														"name": "owner",
+														"nodeType": "Identifier",
+														"overloadedDeclarations": [],
+														"referencedDeclaration": 10,
+														"src": "238:5:0",
+														"typeDescriptions": {
+															"typeIdentifier": "t_address",
+															"typeString": "address"
+														}
+													},
+													"nodeType": "Assignment",
+													"operator": "=",
+													"rightHandSide": {
+														"expression": {
+															"id": 14,
+															"name": "msg",
+															"nodeType": "Identifier",
+															"overloadedDeclarations": [],
+															"referencedDeclaration": 4294967281,
+															"src": "246:3:0",
+															"typeDescriptions": {
+																"typeIdentifier": "t_magic_message",
+																"typeString": "msg"
+															}
+														},
+														"id": 15,
+														"isConstant": false,
+														"isLValue": false,
+														"isPure": false,
+														"lValueRequested": false,
+														"memberLocation": "250:6:0",
+														"memberName": "sender",
+														"nodeType": "MemberAccess",
+														"src": "246:10:0",
+														"typeDescriptions": {
+															"typeIdentifier": "t_address",
+															"typeString": "address"
+														}
+													},
+													"src": "238:18:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_address",
+														"typeString": "address"
+													}
+												},
+												"id": 17,
+												"nodeType": "ExpressionStatement",
+												"src": "238:18:0"
+											}
+										]
+									},
+									"id": 19,
+									"implemented": true,
+									"kind": "constructor",
+									"modifiers": [],
+									"name": "",
+									"nameLocation": "-1:-1:-1",
+									"nodeType": "FunctionDefinition",
+									"parameters": {
+										"id": 11,
+										"nodeType": "ParameterList",
+										"parameters": [],
+										"src": "217:2:0"
+									},
+									"returnParameters": {
+										"id": 12,
+										"nodeType": "ParameterList",
+										"parameters": [],
+										"src": "227:0:0"
+									},
+									"scope": 20,
+									"src": "206:60:0",
+									"stateMutability": "payable",
+									"virtual": false,
+									"visibility": "public"
+								}
+							],
+							"scope": 21,
+							"src": "62:207:0",
+							"usedErrors": []
+						}
+					],
+					"src": "35:234:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}
